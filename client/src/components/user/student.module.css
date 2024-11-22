@@ -1,0 +1,203 @@
+
+:root {
+    --width: 300px;
+
+  }
+
+
+  #genderWrap{
+    display: flex;
+  }
+  #genderWrap input{
+    margin-left: 10px;
+  }
+  #genderWrap label{
+    font-weight: 300;
+    margin-left: 5px;
+    color: rgb(118, 91, 39);
+  }
+  /* User Registeration */
+
+#left {
+
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #ffffff;
+    
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: auto;
+  }
+
+
+  .formHead  {
+    color: orange;
+
+    
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(246, 176, 46) !important;
+    color: white;
+    margin-left: 0;
+    background-image: url("/assets/sunrise.jpg");
+    background-size: contain;
+    
+
+  }
+
+  #left form {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+  }
+
+  #left label {
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: rgb(255, 123, 0);
+  }
+
+  #left input,
+  #left select {
+    width: auto;
+    padding: 7px;
+
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  #left select{
+    color: rgb(255, 123, 0);
+  }
+
+  #left button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:transparent;
+    border: 2px solid orange;
+    color: orange;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+ #left button:hover {
+    background-color: orange;
+    color: white;
+  }
+
+
+  #left input:focus,
+  #left input:focus {
+   outline: none;
+   border-color: #ff7043;
+   /* Highlight border on focus */
+ }
+   
+  
+
+  /* right container */
+  #liHead {
+
+    display: inline-block;
+    width: 60px;
+
+  }
+
+  
+
+
+  #pidSubmit {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+  }
+
+
+  .errorMessage{
+    text-align: center;
+    padding-bottom: 10px;
+    color: red;
+  }
+
+  /*  */
+  #left input[type="checkbox"] {
+    transform: scale(1.5);
+    /* Adjust the scale factor to make it bigger or smaller */
+  }
+
+  #wrapper {
+    display: flex;
+    
+    justify-content: space-around;
+    margin-top: 10px;
+  
+  }
+
+  
+
+
+ 
+
+
+
+
+  /*     erro messagge  */
+  /* CSS for displaying error message */
+
+
+
+  /* --------------------------------media query section-------------------------------- */
+
+  /* ----------setting media query for mobile--------------- */
+  @media (min-width: 320px) and (max-width: 480px) {
+
+   
+
+    /* User Registeration */
+
+    #left {
+
+      padding-right: 20px;
+      padding-left: 20px;
+      
+      border-radius: 5px;
+      margin-top: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: auto;
+    }
+
+
+  
+
+    
+
+    #left label {
+      margin-bottom: 2px;
+      font-weight: bold;
+    }
+
+    #left input,
+    #left select {
+      width: auto;
+      padding: 7px;
+
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+  
+    
+
+
+
+}

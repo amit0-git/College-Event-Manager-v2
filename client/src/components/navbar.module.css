@@ -1,0 +1,94 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+    
+  }
+  .icon{
+    margin-right: 5px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    background-color: rgb(255, 116, 10) !important;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+  }
+
+  .hamburger {
+    padding-right: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .nav__link {
+    position: absolute;
+    width: 100%;
+    top: 3.3rem;
+    left: 0px;
+    z-index: 2;
+    background-color: rgb(255, 116, 10) !important;
+    
+  }
+
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+  }
+
+
+  .nav__link a:hover {
+    background-color: rgb(252, 153, 13);
+    color: black;
+  }
+
+  .hide {
+    display: none; /* This will hide the nav links when the class is applied */
+}
+
+  @media screen and (min-width: 600px) {
+    .nav {
+        background-color: rgb(255, 116, 10) !important;
+
+    }
+
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+
+    .nav__link a {
+      display: inline-block;
+      padding: 15px 15px;
+      color: white;
+      /* font-family: 'Poppins', sans-serif; */
+    }
+   
+
+    .hamburger {
+      display: none;
+    }
+  }

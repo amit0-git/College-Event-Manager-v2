@@ -1,0 +1,197 @@
+
+.note{
+  font-size: 12px;
+}
+.note span{
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* Main Wrapper */
+.teamWrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1200px;
+  
+    border: 1px solid rgb(205, 201, 201);
+    margin-top: 10px;
+ 
+
+  }
+
+  .teamHeader{
+    background-color: rgb(246, 176, 46) !important;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-image: url("/assets/sunrise.jpg");
+    background-position: 100px;
+    
+    
+  }
+  
+  /* Section for creating a team */
+  .upper1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .upper1 td:nth-child(1) {
+    font-weight: bold;
+    width: 180px;
+  }
+  td:nth-child(1) {
+    font-weight: bold;
+  }
+  
+  .teamWrapper input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .teamWrapper button {
+    background-color: transparent;
+    color: orange;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid orange;
+    transition: background-color 0.3s ease;
+    width: 170px;
+  }
+  
+  .teamWrapper button:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  .errorStatus {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Section for adding team members */
+  .upper2 {
+    margin-top: 30px;
+  }
+  .upperHead{
+    font-size: 1.5rem;
+    background-color: rgb(246, 176, 46);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .teamWrapper input[type="text"] {
+    width:auto;
+    display: inline-block;
+  }
+  
+  .teamWrapper table th, table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .teamWrapper table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .teamWrapper table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+.upper2 .deleteBtn {
+    background-color: transparent;
+    border:2px solid red;
+    color: red;
+    padding: 2px;
+    border-radius: 50px;
+    
+    cursor: pointer;
+  }
+  .upper2 .deleteBtn:hover {
+    background-color: red;
+    color: white;
+ 
+  }
+
+  
+ input:focus,
+ input:focus {
+  outline: none;
+  border-color: #ff7043;
+  /* Highlight border on focus */
+}
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .teamWrapper {
+      width: auto;
+      padding: 15px;
+    }
+  
+    table, input, button {
+      font-size: 0.9rem;
+    }
+  
+    .upper2 input[type="text"] {
+      width: 70%;
+    }
+  
+    .buttonWrap {
+      flex-direction: column;
+    }
+  
+    .errorStatus {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    input[type="text"], select, button {
+      width: 100%;
+    }
+  
+    .upper2 input[type="text"] {
+      width: 100%;
+    }
+    .teamWrapper button {
+      background-color: transparent;
+      color: orange;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 2px solid orange;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+  }
+  

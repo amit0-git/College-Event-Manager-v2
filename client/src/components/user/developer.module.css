@@ -1,0 +1,104 @@
+#mainHead {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  color: white;
+  color: rgb(255, 118, 6);
+
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+
+.cardContainer1 {
+  height: auto;
+
+  width: 300px;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 10px;
+  background-color: white;
+  margin: 0 auto;
+
+
+}
+
+.cardContainer {
+  height: auto;
+  border: 1px solid rgb(244, 153, 92);
+  width: 300px;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+#img img {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  object-position: 1px 10px;
+  border-radius: 50%;
+  margin: 0 auto;
+
+}
+
+#img {
+  display: flex;
+}
+
+.cardContainer {
+  margin: 0 auto;
+}
+
+#name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: rgb(255, 118, 6);
+  font-weight: bold;
+}
+
+#query {
+  text-align: center;
+  color: rgb(178, 116, 0);
+}
+
+#phone {
+  text-align: left;
+  margin-top: 10px;
+  color: rgb(178, 116, 0);
+}
+
+#phone span {
+
+  color: rgb(127, 83, 1);
+  font-weight: bold;
+}
+
+#email {
+  color: rgb(178, 116, 0);
+}
+
+#email span {
+
+  color: rgb(127, 83, 1);
+  font-weight: bold;
+}
+
+#linked {
+  color: rgb(178, 116, 0);
+}
+
+#linked span {
+
+  color: rgb(127, 83, 1);
+  font-weight: bold;
+}
+
+#linked a {
+  color: rgb(178, 116, 0);
+  text-transform: lowercase;
+  font-weight: 300;
+}

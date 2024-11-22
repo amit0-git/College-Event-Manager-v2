@@ -1,0 +1,152 @@
+/* Participation Wrapper */
+.participationWrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1200px;
+
+  border: 1px solid rgb(213, 210, 210);
+  margin-top: 10px;
+
+
+}
+.errorStatus {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+#note{
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#note span{
+  font-weight: bold;
+}
+
+
+/* Title Styling */
+.title {
+
+  font-size: 1.7rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(246, 176, 46) !important;
+  background-image: url("/assets/sunrise.jpg");
+  background-position: 100px;
+
+}
+
+/* Card Layout for Individual and Team Events */
+.cardWrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  justify-content: center;
+}
+
+/* Individual Card Style */
+.card {
+  background-color: #fff;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+  padding: 10px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  background-color: #f8d39894;
+}
+
+
+.cardTitle {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+
+  background-color: rgb(246, 176, 46) !important;
+  padding: 10px;
+
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+.table td {
+  background-color: #fafafa;
+}
+
+/* Button Styling for Delete */
+.deleteBtn {
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #e53935;
+}
+
+/* No Events Found Styling */
+.noEventsFound {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .participationWrapper {
+    width: auto;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .deleteBtn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

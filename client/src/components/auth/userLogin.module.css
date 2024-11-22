@@ -1,0 +1,94 @@
+.errorMessage {
+  width: 300px;
+  margin: 20px auto;
+  color: red;
+  text-align: center;
+  font-size: 16px;
+
+}
+
+/* CSS for styling */
+#user {
+  width: 100px;
+  height: 100px;
+}
+
+
+.createAcc {
+  font-size: 10px;
+  color: rgb(255, 85, 0);
+
+}
+
+
+#wrapper {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+#formWrapper {
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: rgb(255, 123, 0);
+}
+
+#wrapper label {
+  display: block;
+
+  margin-bottom: 10px;
+  text-align: left;
+  color: rgb(255, 123, 0);
+}
+
+#wrapper input[type="email"],
+input[type="number"],
+input[type="password"],
+button {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+
+}
+
+#wrapper button {
+  border: 2px solid orange;
+  color: orange;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: transparent;
+
+
+}
+
+#wrapper input[type="email"]:focus,
+#wrapper input[type="password"]:focus {
+  outline: none;
+  border-color: #ff7043;
+  /* Highlight border on focus */
+}
+
+#wrapper button:hover {
+  background-color: #fa8f14;
+  color: white;
+}
