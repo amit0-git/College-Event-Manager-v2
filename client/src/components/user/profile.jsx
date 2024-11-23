@@ -7,8 +7,6 @@ import { Helmet } from 'react-helmet';
 import styles from "./profile.module.css"; // Custom CSS styles
 
 import Cookies from 'js-cookie';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faIdCard, faSignature, faPhone, faAddressBook, faGraduationCap, faCodeBranch, faCalendarDays, faVenusMars,faBed } from '@fortawesome/free-solid-svg-icons';
 
 
 const UserProfile = () => {
@@ -102,43 +100,43 @@ const UserProfile = () => {
         <table>
           <tbody>
             <tr className={styles.table_cell}>
-              <td>  <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />Email</td>
+              <td>Email</td>
               <td>{data.email || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faIdCard} />Roll No</td>
+              <td>Roll No</td>
               <td>{data.rollno || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faSignature} />Name</td>
+              <td>Name</td>
               <td>{data.name || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faVenusMars} />Gender</td>
+              <td>Gender</td>
               <td>{data.gender || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faBed} />Accomodation</td>
+              <td>Accomodation</td>
               <td>{data.accomodation || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faPhone} />Phone</td>
+              <td>Phone</td>
               <td>{data.phone || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faAddressBook} />Address</td>
+              <td>Address</td>
               <td>{data.address || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faGraduationCap} />College</td>
+              <td>College</td>
               <td>{data.college || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faCodeBranch} />Branch</td>
+              <td>Branch</td>
               <td>{data.branch || "Not Available"}</td>
             </tr>
             <tr>
-              <td><FontAwesomeIcon className={styles.icon} icon={faCalendarDays} />Year</td>
+              <td>Year</td>
               <td>{data.year || "Not Available"}</td>
             </tr>
           </tbody>

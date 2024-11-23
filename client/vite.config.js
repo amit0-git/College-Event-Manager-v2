@@ -13,11 +13,6 @@ export default defineConfig({
                 rewrite: (path) => path.replace(/^\/api/, ''), // Rewrite the path to remove '/api'
             },
         },
-    },
-    build: {
-        rollupOptions: {
-            external: ['@fortawesome/free-solid-svg-icons']
-        }
     }
 });
 

@@ -4,9 +4,7 @@ import {  useNavigate} from 'react-router-dom';
 import styles from './navbar.module.css'; // Import the CSS module
 import Cookies from 'js-cookie';
 import axios from "axios";
-import { faUser, faLink,faList, faRightFromBracket,faHouse,faUserTie,faRightToBracket } from '@fortawesome/free-solid-svg-icons'; 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //dheerendra
 
 function Navbar() {
@@ -54,13 +52,13 @@ function Navbar() {
                 </div>
 
                 <div className={`${styles.nav__link} ${isNavVisible ? '' : styles.hide}`}>
-                    <a href="/"><FontAwesomeIcon  className={styles.icon} icon={faHouse} />Home</a>
-                    <a href="/login"><FontAwesomeIcon icon={faRightToBracket}  className={styles.icon} />Sign In</a>
-                    <a href="/profile"> <FontAwesomeIcon  className={styles.icon} icon={faUser} />Profile</a>
-                    <a href="/invitation"><FontAwesomeIcon className={styles.icon} icon={faLink} />Invitation</a>
-                    <a href="participation"><FontAwesomeIcon  className={styles.icon} icon={faList} />Participation</a>
-                    <a href="/developer"><FontAwesomeIcon className={styles.icon} icon={faUserTie} />Developer</a>
-                    <a href="#" onClick={handleLogout}><FontAwesomeIcon className={styles.icon} icon={faRightFromBracket} />Log Out</a>
+                    <a href="/">Home</a>
+                    <a href="/login">Sign In</a>
+                    <a href="/profile"> Profile</a>
+                    <a href="/invitation">Invitation</a>
+                    <a href="participation">Participation</a>
+                    <a href="/developer">Developer</a>
+                    <a href="#" onClick={handleLogout}>Log Out</a>
                 </div>
             </nav>
         </header>

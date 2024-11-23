@@ -29,7 +29,7 @@ function UserLogin() {
         setLoading(true); // Set loading to true when login is initiated
 
         try {
-            const response = await axios.post('/api/users/login', { email, password, captchaValue }, { withCredentials: true });
+            const response = await axios.post('/users/login', { email, password, captchaValue }, { withCredentials: true });
             console.log(response.data);
 
             // If successful login

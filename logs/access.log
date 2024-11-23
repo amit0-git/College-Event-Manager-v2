@@ -25,3 +25,4 @@
 ::1 - - [22/Nov/2024:20:03:10 +0000] "POST /api/users/getData HTTP/1.1" 404 157 "http://localhost:11000/studentRegister" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 ::1 - - [22/Nov/2024:20:29:31 +0000] "POST /api/users/getData HTTP/1.1" 404 157 "http://localhost:11000/studentRegister" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 ::1 - - [22/Nov/2024:20:29:33 +0000] "POST /api/users/getData HTTP/1.1" 404 157 "http://localhost:11000/studentRegister" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+::1 - - [23/Nov/2024:07:13:18 +0000] "POST /api/users/login HTTP/1.1" 404 155 "http://localhost:11000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
