@@ -59,7 +59,5 @@ captcha key
 mongodb indexes
 http only cookie
 
-mongodb -Amit$$89898
-render- Render#89898
 
 
