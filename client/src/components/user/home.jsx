@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
-  
+
     const navigate = useNavigate();
 
     const register = () => {
@@ -14,7 +14,7 @@ const Home = () => {
 
 
 
- 
+
     return (
         <div id={styles.mainWrapper}>
             <div id={styles.navBar}>
@@ -49,7 +49,8 @@ const Home = () => {
                         <img src="assets/famous-family-red-bull-dance-your-style-2021-india-finals.avif" alt="" />
                         <div id={styles.cardHead}>Group Dance</div>
                         <div id={styles.cardDesc}>
-                            A street play is a short, outdoor performance that uses drama, music, and social messages to engage and entertain audiences.
+
+                            A dynamic performance where dancers synchronize movements, showcasing creativity, coordination and entertain audiences.
                         </div>
                     </div>
                     <div id={styles.card}>
@@ -63,21 +64,21 @@ const Home = () => {
                         <img src="assets/band.jpg" alt="" />
                         <div id={styles.cardHead}>Battle of Bands</div>
                         <div id={styles.cardDesc}>
-                            Group dance is a coordinated performance by multiple dancers, blending rhythm, movement, and expression to tell a story collectively.
+                            A music competition where bands perform live, judged on talent and style, aiming to win prizes or gain recognition.
                         </div>
                     </div>
                     <div id={styles.card}>
                         <img src="assets/fashion.jpg" alt="" />
                         <div id={styles.cardHead}>Renaissance</div>
                         <div id={styles.cardDesc}>
-                            Group dance is a coordinated performance by multiple dancers, blending rhythm, movement, and expression to tell a story collectively.
+                            A showcase of Renaissance-inspired attire featuring elaborate costumes, rich fabrics, historical designs, and accessories.
                         </div>
                     </div>
                     <div id={styles.card}>
                         <img src="assets/dj.png" alt="" />
                         <div id={styles.cardHead}>DJ Night</div>
                         <div id={styles.cardDesc}>
-                            Group dance is a coordinated performance by multiple dancers, blending rhythm, movement, and expression to tell a story collectively.
+                            An electrifying music event where DJs mix tracks live, creating high-energy vibes with lights, beats, and nonstop dancing all night.
                         </div> </div>
                 </div>
             </div>

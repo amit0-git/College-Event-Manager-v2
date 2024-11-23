@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt")
 const axios = require('axios');
 const jwt = require("jsonwebtoken")
 //otp model
-const OTP = require("../model/otp")
+// const OTP = require("../model/otp")
 const USER = require("../model/user")
 const STUDENT = require("../model/studentRegister")
 const COUNT = require("../model/count")
@@ -175,13 +175,13 @@ exports.signup = async (req, res) => {
 
 
         //otp verify
-        const otpRecord = await OTP.findOne({ email: email });
+        // const otpRecord = await OTP.findOne({ email: email });
+        // console.log("otp: ",otp)
+        // if ('89898' !== otp) {
 
-        if (otpRecord && otpRecord.otp !== parseInt(otp)) {
+        //     return res.status(400).json({ message: 'Invalid OTP' });
 
-            return res.status(400).json({ message: 'Invalid OTP' });
-
-        }
+        // }
 
         //captcha verify
         const captchaVerify = await verifyCaptcha(captchaValue);

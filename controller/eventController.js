@@ -19,7 +19,7 @@ const TEAM_BACKUP = require("../model/teamBackup");
 exports.getSoloEvents = async (req, res) => {
     //get solo events
     try {
-        const events = await EVENT.find({ type: "Solo" })
+        const events = await EVENT.find({ type: "Individual" })
         res.status(200).json(events)
 
     }
@@ -97,7 +97,7 @@ async function maxEventParticipation(email, sEvent) {
         //total 5 events 
         if (student.college === "SRMS CET") {
 
-            if (soloEvents + team <= 2) {
+            if (soloEvents + team <= 5) {
                 return true
             }
             else {
@@ -223,7 +223,7 @@ async function maxEventParticipationTeam(pid1) {
         //total 5 events 
         if (student.college === "SRMS CET") {
 
-            if (soloEvents + team < 2) {
+            if (soloEvents + team < 5) {
                 return true
             }
             else {

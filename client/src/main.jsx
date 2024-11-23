@@ -14,62 +14,62 @@ import ParticipationSummary from './components/user/participationDash.jsx'
 import Invitation from "./components/user/invitation.jsx"
 import Developer from "./components/user/developer.jsx"
 import Home from "./components/user/home.jsx"
-
+import SiteUnderMaintenance from './components/user/maintenance.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 const router = createBrowserRouter([
   {
-      path: '/',
-      element: <App />, // Main App component
-  
-      children: [
+    path: '/',
+    element: <App />, // Main App component
 
-        {
-          path: '/',
-          element: <Home />,
-        },
-         
-        {
-            path: '/login',
-            element: <UserLogin />,
-          },
-          {
-            path: '/signup',
-            element: <UserSignup />,
-          },
-          {
-            path: '/studentRegister',
-            element: <StudentRegister />
-          }
-            ,
-          {
-            path: '/teamEvent',
-            element: <TeamEvent />
-          }
-            ,
-          {
-            path: '/individualEvent',
-            element: <SoloEvents />
-          },
-            , {
-            path: "/profile",
-            element: <UserProfile />
-          }, {
-            path: "/participation",
-            element: <ParticipationSummary />
-          }
-            , {
-            path: "/invitation",
-            element: <Invitation />
-          }
-          , {
-            path: "/developer",
-            element: <Developer/>
-          }
-         
-          
-      ],
+    children: [
+
+      {
+        path: '/',
+        element: <Home />,
+      },
+
+      {
+        path: '/login',
+        element: <UserLogin />,
+      },
+      {
+        path: '/signup',
+        element: <UserSignup />,
+      },
+      {
+        path: '/studentRegister',
+        element: <StudentRegister />
+      }
+      ,
+      {
+        path: '/teamEvent',
+        element: <TeamEvent />
+      }
+      ,
+      {
+        path: '/individualEvent',
+        element: <SoloEvents />
+      },
+      , {
+        path: "/profile",
+        element: <UserProfile />
+      }, {
+        path: "/participation",
+        element: <ParticipationSummary />
+      }
+      , {
+        path: "/invitation",
+        element: <Invitation />
+      }
+      , {
+        path: "/developer",
+        element: <Developer />
+      }
+
+
+    ],
   },
 ]);
 
@@ -79,7 +79,8 @@ createRoot(document.getElementById('root')).render(
 
 
     <RouterProvider router={router} />
-
+    
+    {/* <SiteUnderMaintenance /> */}
 
   </StrictMode>,
 )

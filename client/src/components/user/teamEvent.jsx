@@ -327,7 +327,7 @@ const CreateTeam = () => {
       }
 
       const response = await axios.post("/events/saveTeam", {
-        name: teamName.trim(),
+        name: teamName.trim().toLowerCase(),
         event: selectEvent,
         members: pids
       }, {
