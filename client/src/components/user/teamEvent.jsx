@@ -255,7 +255,7 @@ const CreateTeam = () => {
   // Get team events from the database
   async function getTeamEvents() {
     try {
-      const response = await axios.post("/api/events/getTeamEvents", { withCredentials: true });
+      const response = await axios.post("/events/getTeamEvents", { withCredentials: true });
       setEvents(response.data);
     } catch (error) {
       setError("Failed to fetch events");
@@ -271,7 +271,7 @@ const CreateTeam = () => {
   // Check if PID exists
   async function checkPID(pid) {
     try {
-      const response = await axios.post("/api/events/checkPid", { pid: pid }, { withCredentials: true });
+      const response = await axios.post("/events/checkPid", { pid: pid }, { withCredentials: true });
       return response.data;
     } catch (error) {
       setErrorMessage(error.response.data.message);
@@ -326,7 +326,7 @@ const CreateTeam = () => {
         return;
       }
 
-      const response = await axios.post("/api/events/saveTeam", {
+      const response = await axios.post("/events/saveTeam", {
         name: teamName.trim(),
         event: selectEvent,
         members: pids

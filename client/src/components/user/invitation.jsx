@@ -151,7 +151,7 @@ const TeamInvitation = () => {
   const handleAccept = async (tid, pid) => {
     setLoading(prev => ({ ...prev, accept: { [tid]: true } })); // Set loading for accept button
     try {
-      const response = await axios.post('/api/events/addVerifiedMember', {
+      const response = await axios.post('/events/addVerifiedMember', {
         tid: tid,
         pid: pid,
       }, { withCredentials: true });
@@ -168,7 +168,7 @@ const TeamInvitation = () => {
   const handleReject = async (tid, pid) => {
     setLoading(prev => ({ ...prev, reject: { [tid]: true } })); // Set loading for reject button
     try {
-      const response = await axios.post('/api/events/delInvitation', {
+      const response = await axios.post('/events/delInvitation', {
         pid: pid,
         tid: tid,
       }, { withCredentials: true });
@@ -185,7 +185,7 @@ const TeamInvitation = () => {
   // Load invitation data
   const getInvitation = async () => {
     try {
-      const response = await axios.post('/api/events/getInvitation', { withCredentials: true });
+      const response = await axios.post('/events/getInvitation', { withCredentials: true });
       console.log("Invitations: ", response.data);
       setEmail(response.data[0].email);
       setInvitations(response.data);

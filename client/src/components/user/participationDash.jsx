@@ -170,7 +170,7 @@ const ParticipationSummary = () => {
   useEffect(() => {
     const fetchIndividualEvents = async () => {
       try {
-        const response = await axios.post('/api/events/individualParticipation', { withCredentials: true });
+        const response = await axios.post('/events/individualParticipation', { withCredentials: true });
         setPid(response.data.pid.pid);
         setIndividualEvents(response.data.data.events); // Assuming response.data is an array of individual events
       } catch (error) {
@@ -185,7 +185,7 @@ const ParticipationSummary = () => {
   useEffect(() => {
     const fetchTeamEvents = async () => {
       try {
-        const response = await axios.post('/api/events/teamParticipation', { withCredentials: true });
+        const response = await axios.post('/events/teamParticipation', { withCredentials: true });
         setTeamEvents(response.data.data); // Assuming response.data is an array of team events
       } catch (error) {
         console.error('Error fetching team events:', error);
@@ -198,7 +198,7 @@ const ParticipationSummary = () => {
   const handleDelete = async (tid) => {
     setLoading(prev => ({ ...prev, [tid]: true })); // Set loading for the specific team ID
     try {
-      const response = await axios.post('/api/events/delTeam', {
+      const response = await axios.post('/events/delTeam', {
         tid: tid
       }, { withCredentials: true });
 

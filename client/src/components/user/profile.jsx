@@ -30,7 +30,7 @@ const UserProfile = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.post("/api/users/getData", {
+      const response = await axios.post("/users/getData", {
         withCredentials: true
       });
       setData(response.data.data);

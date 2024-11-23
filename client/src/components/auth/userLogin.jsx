@@ -20,7 +20,7 @@ function UserLogin() {
     // Function to handle CAPTCHA change
     const onCaptchaChange = (value) => {
         setCaptchaValue(value); // Update captcha value state
-        console.log("Login Captcha :", value);
+        // console.log("Login Captcha :", value);
     };
 
     // This function can be used to update the message based on login status

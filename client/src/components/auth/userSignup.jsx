@@ -37,7 +37,7 @@ function UserSignup() {
     // Function to signup user
     const signupUser  = async (email, password) => {
         try {
-            const response = await axios.post('/api/users/signup', { email, password, captchaValue });
+            const response = await axios.post('/users/signup', { email, password, captchaValue });
             console.log("response", response.data);
             if (response.data) {
                 setMessage(response.data.message);

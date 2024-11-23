@@ -184,7 +184,7 @@ const SoloEvents = () => {
   // Fetch all the individual events and display them
   const fetchEvents = async () => {
     try {
-      const response = await axios.post("/api/events/getSoloEvents", { withCredentials: true });
+      const response = await axios.post("/events/getSoloEvents", { withCredentials: true });
       setEvents(response.data);
       console.log(response.data);
     } catch (error) {
@@ -201,7 +201,7 @@ const SoloEvents = () => {
   // Get participated events and set checkboxes for already participated events
   async function getParticipatedEvents() {
     try {
-      const response = await axios.post("/api/events/individualParticipation", {
+      const response = await axios.post("/events/individualParticipation", {
         withCredentials: true
       });
       setEmail(response.data.data.email);
@@ -242,7 +242,7 @@ const SoloEvents = () => {
   async function saveIndividualEvents() {
     try {
       setSaving(true); // Set saving to true when saving starts
-      const response = await axios.post("/api/events/saveSoloEvents", {
+      const response = await axios.post("/events/saveSoloEvents", {
         data: selectedOptions
       }, { withCredentials: true });
 

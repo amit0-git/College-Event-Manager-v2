@@ -34,7 +34,7 @@ function studentRegister() {
 
 
 
-            const response = await axios.post("/api/users/getData"
+            const response = await axios.post("/users/getData"
                 , { withCredentials: true });
 
             console.log("edit data", response.data.data);
@@ -91,7 +91,7 @@ function studentRegister() {
 
     const registerStudent = async () => {
         try {
-            const response = await axios.post("api/users/register", {
+            const response = await axios.post("users/register", {
                 // email:"sample@gmail.com",
                 rollno: formData.rollno.trim(),
                 name: formData.name.trim(),
