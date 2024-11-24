@@ -8,7 +8,7 @@ function App() {
 
   const location = useLocation();
 
-  const routesWithNavbar = ['/login','/teamEvent', '/individualEvent', '/profile', '/participation', '/invitation', '/developer',"/studentRegister"];
+  const routesWithNavbar = ['/login','/teamEvent', '/individualEvent', '/profile', '/participation', '/invitation', '/developer',"/studentRegister","/signup"];
 
 
   const showNavbar = routesWithNavbar.includes(location.pathname);
