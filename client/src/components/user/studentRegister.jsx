@@ -172,7 +172,7 @@ function studentRegister() {
 
                 <div className={styles.formHead}>User Registration</div>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="rollno">Roll No/Reg. No</label>
+                    <label htmlFor="rollno">Aadhar No</label>
                     <input
                         type="text"
                         name="rollno"

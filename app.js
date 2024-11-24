@@ -28,12 +28,22 @@ app.get('*', (req, res) => {
 
 
 // CORS configuration
+// const corsOptions = {
+//     origin: 'http://localhost:11000', // React app URL
+//     methods: ['GET', 'POST', 'OPTIONS'], // Allowed methods
+//     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+//     credentials: true // Allow credentials (cookies)
+// };
+
+
 const corsOptions = {
-    origin: 'http://localhost:11000', // React app URL
-    methods: ['GET', 'POST', 'OPTIONS'], // Allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-    credentials: true // Allow credentials (cookies)
+  origin: 'https://srmszest.in', // Your production domain
+  methods: ['GET', 'POST', 'OPTIONS'], // Allowed methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+  credentials: true, // Allow credentials (cookies)
 };
+
+
 
 const logStream = fs.createWriteStream(path.join(__dirname, 'logs', 'access.log'), { flags: 'a' });
 //logging middleware

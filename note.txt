@@ -58,8 +58,9 @@ team name trim lower
 captcha key
 mongodb indexes
 http only cookie
-
+update venue and time in participation
 mongodb -Amit$$89898
 render- Render#89898
-
+digital ocean promo
+GitHub student
 

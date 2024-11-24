@@ -104,7 +104,7 @@ const UserProfile = () => {
               <td>{data.email || "Not Available"}</td>
             </tr>
             <tr>
-              <td>Roll No</td>
+              <td>Aadhar No</td>
               <td>{data.rollno || "Not Available"}</td>
             </tr>
             <tr>

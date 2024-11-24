@@ -51,7 +51,7 @@ const COUNT = require("../model/count")
 exports.getData = async (req, res) => {
     try {
 
-     
+
 
         //verify email with token email
         const token = req.cookies.token;
@@ -66,7 +66,7 @@ exports.getData = async (req, res) => {
 
         console.log(emailToken);
 
-      
+
 
         //get data
         const data = await STUDENT.findOne({ email: emailToken });
@@ -266,10 +266,11 @@ exports.login = async (req, res) => {
 
 
         // Send token in an HTTP-only cookie
+        
         res.cookie('token', token, {
-            httpOnly: false, // Prevents access to cookie from JS (for security)
-            secure: false, // Use 'true' in production (HTTPS)
-
+            httpOnly: true, // Prevents access to cookie from JS (for security)
+            secure: true, // Use 'true' in production (HTTPS)
+            sameSite: 'strict',
             maxAge: 3600 * 1000 // 1 hour expiration
         });
 
@@ -334,15 +335,15 @@ exports.register = async (req, res) => {
 
         const pid = "P" + Number(lastCount + 1)
         //trim data to remove spaces
-      
+
 
         const email = emailToken;
         const rollno = req.body.rollno.trim()
         const name = req.body.name.trim()
         const phone = req.body.phone.trim()
         const address = req.body.address.trim();
-        const gender=req.body.gender
-        const accomodation=req.body.accomodation
+        const gender = req.body.gender
+        const accomodation = req.body.accomodation
         const college = req.body.college
         const branch = req.body.branch
         const year = req.body.year
@@ -355,7 +356,7 @@ exports.register = async (req, res) => {
 
         const alreadyRegistered = await STUDENT.findOne({ email: email })
         //if the user is editing its details
-        if (alreadyRegistered  && email===emailToken) {
+        if (alreadyRegistered && email === emailToken) {
 
             //if the user is already registered then update the student
             const updatedStudent = await STUDENT.findOneAndUpdate(
@@ -364,8 +365,8 @@ exports.register = async (req, res) => {
                     rollno: rollno,
                     name: name,
                     phone: phone,
-                    gender:gender,
-                    accomodation:accomodation,
+                    gender: gender,
+                    accomodation: accomodation,
                     address: address,
                     college: college,
                     branch: branch,
@@ -387,11 +388,11 @@ exports.register = async (req, res) => {
 
 
 
-        
 
 
-       
-        
+
+
+
 
 
 
@@ -402,8 +403,8 @@ exports.register = async (req, res) => {
             email: email,
             rollno: rollno,
             name: name,
-            gender:gender,
-            accomodation:accomodation,
+            gender: gender,
+            accomodation: accomodation,
             phone: phone,
             address: address,
             college: college,
@@ -419,7 +420,7 @@ exports.register = async (req, res) => {
 
     }
     catch (error) {
-        console.error("error",error);
+        console.error("error", error);
         res.status(500).json({ message: 'Server error' });
 
     }
@@ -428,19 +429,19 @@ exports.register = async (req, res) => {
 
 
 //logout functionalty
-exports.logout=async(req,res)=>{
+exports.logout = async (req, res) => {
     try {
         //reset the cookie
         console.log("Logout ")
         res.clearCookie('token', {
             httpOnly: false, // Makes the cookie inaccessible to JavaScript
             secure: false, // Set to true in production for HTTPS
-            
-          });
-          res.status(200).json({ message: 'Logged out successfully.' });
+
+        });
+        res.status(200).json({ message: 'Logged out successfully.' });
 
     }
-    catch(error){
+    catch (error) {
 
     }
 }
