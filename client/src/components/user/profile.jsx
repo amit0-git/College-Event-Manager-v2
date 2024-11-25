@@ -22,7 +22,8 @@ const UserProfile = () => {
     address: "",
     college: "",
     branch: "",
-    year: ""
+    year: "",
+    verified: ""
   });
 
   const [loading, setLoading] = useState(true); // To manage loading state
@@ -90,7 +91,9 @@ const UserProfile = () => {
       <div className={styles.profileHeader}>
         Your PID: {data.pid || "Not Available"}
       </div>
-
+      <div className={styles.note}>Note:-Verification will be done at college
+        <br/>It is mandatory to bring Aadhar card for verification
+      </div>
 
       <div className={styles.userProfile}>
         User Profile
@@ -99,6 +102,14 @@ const UserProfile = () => {
         <img src="/assets/wheel.png" alt="" srcset="" className={styles.wheel} />
         <table>
           <tbody>
+
+            <tr className={styles.table_cell}>
+              <td>Status</td>
+              <td style={{ color: data.verified === 1 ? 'green' : 'red' }}>
+                {data.verified === 1 ? 'Verified' : 'Not Verified'}
+              </td>
+            </tr>
+
             <tr className={styles.table_cell}>
               <td>Email</td>
               <td>{data.email || "Not Available"}</td>

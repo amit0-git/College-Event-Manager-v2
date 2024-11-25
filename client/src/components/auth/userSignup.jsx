@@ -104,7 +104,7 @@ function UserSignup() {
                 </form>
 
                 <div>
-                    <NavLink className={styles.createAcc} to="/">Already have an account? Login Here</NavLink>
+                    <NavLink className={styles.createAcc} to="/login">Already have an account? Login Here</NavLink>
                 </div>
             </div>
 

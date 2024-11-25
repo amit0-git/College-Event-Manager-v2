@@ -3,7 +3,10 @@
   margin-top: 20px;
 
 }
-
+.note{
+  font-size: 12px;
+  padding: 2px;
+}
 #note {
   font-size: 12px;
   margin-left: 10px;

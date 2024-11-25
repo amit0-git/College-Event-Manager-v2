@@ -17,6 +17,10 @@
   color: #e74c3c;
   font-weight: bold;
 }
+.note{
+  font-size: 13px;
+  font-weight: bold;
+}
 #note{
   font-size: 12px;
   margin-top: 5px;

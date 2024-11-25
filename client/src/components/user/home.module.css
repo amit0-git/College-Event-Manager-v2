@@ -22,7 +22,7 @@
 }
 #mainWrapper {
     background-image: url("/assets/Konark-Sun-Temple-Wheel.webp");
-    background-color: rgb(255, 100, 16);
+    background-color: rgb(134, 58, 17);
     background-attachment: fixed;
     position: relative;
     height: auto;
@@ -35,8 +35,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 100, 16, 0.574);
-
+    background-color: rgba(132, 61, 22, 0.799);
+    backdrop-filter: blur(5px);
+    
     z-index: 1;
 
 }

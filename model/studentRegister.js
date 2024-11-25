@@ -55,6 +55,10 @@ const registerSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
+    verified:{
+        type:Number,
+        default:0
+    }
    
 });
 

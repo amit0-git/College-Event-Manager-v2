@@ -91,6 +91,11 @@ function studentRegister() {
 
     const registerStudent = async () => {
         try {
+
+            //chk aadhar length
+            if (formData.rollno.trim().length !== 12) {
+                return setMessage("Aadhar Number Incorrect")
+            }
             const response = await axios.post("users/register", {
                 // email:"sample@gmail.com",
                 rollno: formData.rollno.trim(),

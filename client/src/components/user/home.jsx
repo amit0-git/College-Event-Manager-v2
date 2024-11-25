@@ -33,9 +33,10 @@ const Home = () => {
                         <div id={styles.date}>Date: 29th & 30th Nov 2024</div>
                         <button id={styles.regBtn} onClick={register}>Register</button>
 
-                        <div id={styles.note}><span>Note:-</span> Registeration will be done on this portal only<br />
-                            Registeration will be done only from 25th Nov to 28th Nov 2024<br />
-                            After that no registeration will be done
+                        <div id={styles.note}><span>Note:-</span>* Registeration will be done on this portal only<br />
+                            *Registeration will be done only from 25th Nov to 28th Nov 2024<br />
+                            *After that no registeration will be done<br/>
+                            *It is mandatory to bring Aadhar card for verification
                         </div>
                     </div>
                 </div>

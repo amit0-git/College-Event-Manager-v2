@@ -229,7 +229,9 @@ const ParticipationSummary = () => {
       <Helmet>
         <title>Participation</title>
       </Helmet>
-      <h1 className={styles.title}>Total Participation</h1>
+      <div className={styles.title}>Total Participation
+        <div className={styles.note}>Note: Bring the print of this screenshot during validation </div>
+      </div>
 
       {/* Individual Events Section */}
       <div className={styles.cardTitle}>Individual Event</div>
