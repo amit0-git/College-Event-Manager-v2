@@ -429,8 +429,9 @@ const CreateTeam = () => {
         </button>
 
         {errorMessage && <div className={styles.errorStatus}>{errorMessage}</div>}
-        <div className={styles.note}><span>Note:-</span>&nbsp;After Creating team Invitation will be sent to all PIDs <br /> Members will only be added in your team if they accept invite<br />
-          Check Invitation in invitation section
+        <div className={styles.note}><span>Note:-</span>&nbsp;After Creating team Invitation will be sent to all PIDs ,including yorself <br /> Members will only be added in your team if they accept invite<br />
+          Check Invitation in invitation section<br/>
+          Dont't forget to add your PID in the Team
         </div>
         <table>
           <thead>

@@ -97,7 +97,7 @@ async function maxEventParticipation(email, sEvent) {
         //total 5 events 
         if (student.college === "SRMS CET") {
 
-            if (soloEvents + team <= 5) {
+            if (soloEvents + team <= 6) {
                 return true
             }
             else {
@@ -223,7 +223,7 @@ async function maxEventParticipationTeam(pid1) {
         //total 5 events 
         if (student.college === "SRMS CET") {
 
-            if (soloEvents + team < 5) {
+            if (soloEvents + team < 6) {
                 return true
             }
             else {
