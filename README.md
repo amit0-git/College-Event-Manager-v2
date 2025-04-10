@@ -1,4 +1,4 @@
-# College Event Manager
+![Screenshot (70)](https://github.com/user-attachments/assets/f436c1eb-2466-44a4-a724-55bb689bf6f1)# College Event Manager
 
 A comprehensive web portal for managing college events where students can register for various events organized by the college.
 
@@ -21,10 +21,12 @@ A comprehensive web portal for managing college events where students can regist
 <img src="https://github.com/user-attachments/assets/06b4f274-bf4d-487d-b81c-3c10e320478f" width="400" alt="Login Screenshot">
 
 ### 4. User Personal Detail Page
-<img src="https://github.com/user-attachments/assets/4a5e2370-7139-418e-ad20-7f0e2378e4f3" width="400" alt="Personal Details Screenshot">
+<img src="https://github.com/user-attachments/assets/25b37aca-35b2-4e1a-8834-171d718da288" width="400" alt="Personal Details Screenshot">
+
 
 ### 5. User Profile
-<img src="https://github.com/user-attachments/assets/e4ae83d0-8371-4ad7-9efe-cba03a538647" width="400" alt="User Profile Screenshot">
+<img src="https://github.com/user-attachments/assets/6c2b0140-1f8a-483d-a628-a62c9d8e37ea" width="400" alt="User Profile Screenshot">
+
 
 ### 6. Solo Event Register
 <img src="https://github.com/user-attachments/assets/11aacd81-65ed-4233-b362-4ebe89f9d066" width="400" alt="Solo Event Screenshot">
