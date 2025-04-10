@@ -1,4 +1,4 @@
-![Screenshot (70)](https://github.com/user-attachments/assets/f436c1eb-2466-44a4-a724-55bb689bf6f1)# College Event Manager
+# College Event Manager
 
 A comprehensive web portal for managing college events where students can register for various events organized by the college.
 
